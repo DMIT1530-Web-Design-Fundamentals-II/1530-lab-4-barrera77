@@ -24,12 +24,16 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
+    <div class="image-container">
+      <img
+        src="/img/work-at-home-with-pets.webp"
+        alt="work at home with pets"
+      />
+    </div>
     <header>
-      <div>
-        <img
-          src="/img/work-at-home-with-pets.webp"
-          alt="work at home with pets"
-        />
+      <div class="header-logo">
+        <img src="/img/logo.svg" alt="logo" />
+        <p>remote.ly</p>
       </div>
       <div class="header-content">
         <h1>Make every day 'bring your pet to work' day</h1>
@@ -57,11 +61,11 @@
                 </div>
                 <div class="form-field-group">
                   <label for="email">Email ddress</label>
-                  <input type="text" id="email" />
+                  <input type="email" id="email" />
                 </div>
                 <div class="form-field-group">
                   <label for="password">Password</label>
-                  <input type="text" id="password" />
+                  <input type="password" id="password" />
                 </div>
                 <div class="form-field-group">
                   <label for="password-again">Password (Again)</label>
@@ -89,23 +93,25 @@
                 </div>
                 <div class="form-field-group">
                   <label for="business-type">Business type</label>
-                  <select name="" id="">
+                  <select name="proprietorship" id="proprietorship">
                     <option>Sole Proprietorship</option>
                     <option>Non-Sole Proprietorship</option>
                   </select>
                 </div>
+                <div class="btn-container">
+                  <button class="btn">Claim Your Free Trial</button>
+                </div>
+                <div class="disclaimer">
+                  <p>
+                    By signing up, you agree to our Terms of Service and Privacy
+                    Policy.
+                  </p>
+                </div>
               </section>
-
-              <div>
-                <button>Claim Your Free Trial</button>
-              </div>
             </div>
           </form>
         </div>
       </div>
     </main>
-    <footer>
-      <p>Allfkn rights reserved</p>
-    </footer>
   </body>
 </html>

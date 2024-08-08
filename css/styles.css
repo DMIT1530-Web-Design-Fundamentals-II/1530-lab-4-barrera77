@@ -24,6 +24,23 @@ body {
     3. have a drop-shadow on the text
 
 */
+.image-container {
+}
+
+.header-logo {
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: -87vh;
+  color: var(--white);
+  font-weight: bold;
+}
+
+.header-logo img {
+  width: 40px;
+}
+
 h1 {
   font-size: 60px;
 }
@@ -36,7 +53,7 @@ section {
 }
 
 .form-wrapper,
-.header-content {
+header {
   padding: 1.5rem;
 }
 
@@ -59,22 +76,43 @@ section {
   margin-top: 0;
 }
 
+.form-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 1rem 2rem 1rem;
+  gap: 1rem;
+  color: var(--black);
+}
+
+section {
+  width: 100%;
+}
+
 .form-field-group {
   display: flex;
   flex-direction: column;
 }
 
-.form-field-group input {
+.form-field-group input,
+select {
+  border-radius: 5px;
+}
+
+.btn-container {
+  padding: 2rem 0 1rem 0;
+}
+
+.btn {
+  border-radius: 5px;
+  background-color: var(--grey-blue);
+  color: var(--white);
   width: 100%;
 }
 
-.form-content-wrapper {
-  display: flex;
-  flex-direction: column;
-}
-
-section {
-  width: 100%;
+.disclaimer {
+  padding: 1rem;
+  font-size: 15px;
+  text-align: center;
 }
 
 /* mobile view */
