@@ -117,6 +117,11 @@ select {
   padding: 2rem 0 1rem 0;
 }
 
+.btn:hover {
+  cursor: pointer;
+  background-color: var(--grey-blue-hover);
+}
+
 #proprietorship {
   padding: 5px 0;
 }
@@ -167,11 +172,45 @@ select {
 }
 
 /* Large view */
-@media screen and (min-width: 1000px) and (max-width: 1600px) {
+@media screen and (min-width: 1000px) {
   .header-logo {
     position: relative;
     color: var(--black);
     left: 0;
     padding-bottom: 2rem;
+  }
+
+  body {
+    display: flex;
+
+    & .image-container {
+      width: 40%;
+    }
+
+    & .content {
+      width: 60%;
+    }
+  }
+
+  .image-container {
+    padding-bottom: 1.5rem;
+  }
+
+  .image-container img {
+    content: url("../img/work-at-home.webp");
+    width: 100%;
+    height: 100%;
+  }
+
+  .content {
+    padding: 0 2rem;
+  }
+
+  .form-header {
+    padding: 1rem;
+  }
+
+  .form-container {
+    padding-right: 1rem;
   }
 }
