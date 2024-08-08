@@ -25,20 +25,28 @@ body {
 
 */
 .image-container {
+  position: relative;
 }
 
 .header-logo {
+  color: var(--white);
+  font-weight: bold;
   position: absolute;
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
-  margin-top: -87vh;
-  color: var(--white);
-  font-weight: bold;
+  top: 6px;
+  left: 40px;
 }
 
 .header-logo img {
   width: 40px;
+}
+
+.header-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
 h1 {
@@ -88,7 +96,13 @@ section {
   width: 100%;
 }
 
+.form-column p {
+  padding-top: 1rem;
+  font-size: 1rem;
+}
+
 .form-field-group {
+  padding-top: 0.5rem;
   display: flex;
   flex-direction: column;
 }
@@ -96,10 +110,15 @@ section {
 .form-field-group input,
 select {
   border-radius: 5px;
+  border-color: var(--dark-grey);
 }
 
 .btn-container {
   padding: 2rem 0 1rem 0;
+}
+
+#proprietorship {
+  padding: 5px 0;
 }
 
 .btn {
@@ -115,14 +134,44 @@ select {
   text-align: center;
 }
 
+.disclaimer a {
+  color: var(--black);
+}
+
 /* mobile view */
 @media only screen and (min-width: 600px) {
 }
 
 /* Medium view */
 @media screen and (min-width: 820px) {
+  .header-logo {
+    top: 1rem;
+  }
+
+  .form-header {
+    padding: 1rem 0;
+  }
+
+  .form-column {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .form-field-group {
+    width: 50%;
+  }
+
+  .disclaimer {
+    padding-top: 0;
+  }
 }
 
 /* Large view */
-@media screen and (min-width: 1350px) and (max-width: 1600px) {
+@media screen and (min-width: 1000px) and (max-width: 1600px) {
+  .header-logo {
+    position: relative;
+    color: var(--black);
+    left: 0;
+    padding-bottom: 2rem;
+  }
 }
